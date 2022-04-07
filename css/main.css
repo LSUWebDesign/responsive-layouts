@@ -262,6 +262,7 @@ textarea {
 }
 
 /* DEMO 1 CSS */
+
 /* Style the header */
 .demo-1-header {
   grid-area: header;
@@ -322,3 +323,40 @@ textarea {
       'footer footer footer footer footer footer';
   }
 }
+
+/* END DEMO 1 */
+
+/* SIDEBAR DEMO */
+/* Style the side navigation */
+.sidebar-demo-sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidebar-demo-sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidebar-demo-sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.sidebar-demo-content {
+  margin-left: 200px;
+  padding-left: 20px;
+}
+/* END SIDEBAR DEMO */
