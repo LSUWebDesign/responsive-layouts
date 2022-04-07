@@ -328,15 +328,14 @@ textarea {
 
 /* SIDEBAR DEMO */
 /* Style the side navigation */
+.sidebar-demo-container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  height: 100vh;
+}
+
 .sidebar-demo-sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
   background-color: #111;
-  overflow-x: hidden;
 }
 
 
@@ -356,7 +355,7 @@ textarea {
 
 /* Style the content */
 .sidebar-demo-content {
-  margin-left: 200px;
   padding-left: 20px;
+  overflow-y: scroll;
 }
 /* END SIDEBAR DEMO */
