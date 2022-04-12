@@ -393,3 +393,27 @@ textarea {
   grid-template-rows: min-content 1fr min-content
 }
 /* END STANDARD SITE DEMO */
+.header-main-footer-demo-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  min-height: 100vh;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.header-main-footer-header {
+  grid-area: header;
+  background-color: yellow;
+}
+
+.header-main-footer-main {
+  grid-area: main;
+  background-color: pink;
+}
+
+.header-main-footer-footer {
+  grid-area: footer;
+  background-color: aqua;
+}
