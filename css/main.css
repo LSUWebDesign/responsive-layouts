@@ -471,3 +471,32 @@ textarea {
 }
 
 /* END BABY PANDA */
+
+/* BUTTONS */
+.btn {
+  background-color: magenta;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background-color: darkmagenta;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid magenta;
+  color: magenta;
+}
+
+.btn-secondary:hover {
+  background-color: transparent;
+  color: darkmagenta;
+  border: 2px solid darkmagenta;
+}
+/* END BUTTONS */
