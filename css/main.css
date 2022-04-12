@@ -393,6 +393,8 @@ textarea {
   grid-template-rows: min-content 1fr min-content
 }
 /* END STANDARD SITE DEMO */
+
+/* HEADER MAIN FOOTER */
 .header-main-footer-demo-container {
   display: grid;
   grid-template-areas:
@@ -417,3 +419,55 @@ textarea {
   grid-area: footer;
   background-color: aqua;
 }
+
+/* END HEADER MAIN FOOTER */
+
+/* BABY PANDA */
+.baby-panda-demo-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main";
+  height: 100vh;
+  grid-template-rows: min-content 1fr;
+}
+
+.baby-panda-header {
+  grid-area: header;
+  background-color: pink;
+}
+
+.baby-panda-main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: cornflowerblue;
+}
+
+.baby-panda-inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 2fr;
+  /* gap: 1.25rem; needed to remove because of visible bg color */
+  flex-grow: 1;
+  height: 100%;
+  background-color: chartreuse;
+}
+
+.baby-panda-inner-column-header {
+  background-color: #efefef;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.baby-panda-inner-column {
+  overflow: hidden;
+  height: 100%;
+}
+
+.baby-panda-inner-column-content {
+  overflow: scroll;
+  height: 100%;
+}
+
+/* END BABY PANDA */
