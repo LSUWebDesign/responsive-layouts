@@ -261,6 +261,11 @@ textarea {
   }
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 /* DEMO 1 CSS */
 
 /* Style the header */
@@ -500,3 +505,46 @@ textarea {
   border: 2px solid darkmagenta;
 }
 /* END BUTTONS */
+
+/* SINGLE-GALLERY */
+.single-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 0.25rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+@media (min-width: 1000px) {
+  .single-gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* END SINGLE-GALLERY */
+
+/* SINGLE-GALLERY */
+.double-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 0.25rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.double-gallery-grid a {
+  display: flex;
+  filter: grayscale(.5);
+}
+
+.double-gallery-grid a:hover {
+  filter: grayscale(1);
+}
+
+@media (min-width: 1000px) {
+  .double-gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* END SINGLE-GALLERY */
