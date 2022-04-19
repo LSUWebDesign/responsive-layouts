@@ -401,6 +401,8 @@ img {
 
 /* HEADER MAIN FOOTER */
 .header-main-footer-demo-container {
+  background-color: red;
+  padding-top: 50px;
   display: grid;
   grid-template-areas:
     "header"
@@ -413,6 +415,19 @@ img {
 .header-main-footer-header {
   grid-area: header;
   background-color: yellow;
+}
+
+.header-main-footer-header-wrapper {
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: grey;
+}
+
+.header-main-footer-logo {
+  width: 185px;
 }
 
 .header-main-footer-main {
@@ -476,6 +491,39 @@ img {
 }
 
 /* END BABY PANDA */
+
+/* LINKS */
+.link {
+  color: blue;
+  border-radius: 6px;
+}
+
+.link:hover {
+  color: darkblue;
+}
+
+.link:focus {
+  color: blue;
+  box-shadow: 0 0 0 2px blue;
+}
+
+.link-secondary {
+  color: #333;
+}
+
+.link-secondary:hover {
+  color: #000000;
+}
+
+.link-secondary:focus,
+.link-secondary:focus-visible {
+  color: #333;
+  box-shadow: 0 0 0 2px black;
+}
+
+
+
+/* END LINKS */
 
 /* BUTTONS */
 .btn {
